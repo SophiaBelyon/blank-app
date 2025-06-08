@@ -19,7 +19,7 @@ with col5:
     st.write('')
 with col6:
     st.write('')
-# Creates Creates another row with three columns to center the subtitle
+# Creates  another row with three columns to center the subtitle
 col7, col8, col9 = st.columns(3)
 with col7:
     st.write('')    
@@ -32,7 +32,7 @@ with col9:
 gen_list = ["Female", "Male"]
 edu_list = ["Bachelor's", "Master's", "PhD"]
 job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"]
-#Maps the job titles to numeric values
+#Maps the job titles to numeric values(Corresponding indices for job titles)
 job_idx = [0, 1, 10, 11, 20]
 #Creates input fields for user data
 gender = st.radio('Pick your gender', gen_list)# Radio Buttons to select gender
@@ -47,7 +47,7 @@ with col10:
 with col11:
     st.write('')    
 with col12:
-    #when this button is clicked it triggers the salary prediction
+    #This button triggers salary prediction
     predict_btn = st.button('Predict Salary')
 with col13:
     st.write('')
