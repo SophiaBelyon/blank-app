@@ -1,50 +1,59 @@
+#importing necessary libraraies
 import pickle
 import numpy as np
 import streamlit as st
-
+#loading the pre-trained model
 model = pickle.load(open('model.pkl', 'rb'))
-
+#setting the columns of the web app
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
+#setting column 0 of the web app
 with col0:
     st.write('')
+    #setting column 1 of the web app
 with col1:
     st.write('')
+    #setting column 2 of the web app
 with col2:
-    st.write('')    
+    st.write('') 
+    #setting the title of the web app   
 with col3:
     st.title("ⴍage") 
+    #setting column 4 of the web app
 with col4:
     st.write('')
 with col5:
     st.write('')
 with col6:
     st.write('')
-
+# Creates  another row with three columns to center the subtitle
 col7, col8, col9 = st.columns(3)
 with col7:
     st.write('')    
 with col8:
+    #Centered subtitle explaining the app's purpose
     st.markdown("<h6 style='text-align: center;'>A simple web app to predict annual salary</h6>", unsafe_allow_html=True)
 with col9:
     st.write('')
-
+#Lists defining options for user input
 gen_list = ["Female", "Male"]
 edu_list = ["Bachelor's", "Master's", "PhD"]
 job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"]
+#Maps the job titles to numeric values(Corresponding indices for job titles)
 job_idx = [0, 1, 10, 11, 20]
-
-gender = st.radio('Pick your gender', gen_list)
-age = st.slider('Pick your age', 21, 55)
-education = st.selectbox('Pick your education level', edu_list)
-job = st.selectbox('Pick your job title', job_list)
-experience = st.slider('Pick your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f")
-
+#Creates input fields for user data
+gender = st.radio('Pick your gender', gen_list)# Radio Buttons to select gender
+age = st.slider('Pick your age', 21, 55)# Slider to select age btwn 21 and 55
+education = st.selectbox('Pick your education level', edu_list)# Dropdown to select education level
+job = st.selectbox('Pick your job title', job_list)# Dropdown to select job title
+experience = st.slider('Pick your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f")# Slider to select years of experience(from 0 to 25 years)with 0.5 year increments
+# Creates a 5 column layout used to center the 'Predict Salary'button
 col10, col11, col12, col13, col14 = st.columns(5)
 with col10:
     st.write('')
 with col11:
     st.write('')    
 with col12:
+    #This button triggers salary prediction
     predict_btn = st.button('Predict Salary')
 with col13:
     st.write('')
