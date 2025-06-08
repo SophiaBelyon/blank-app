@@ -2,9 +2,8 @@
 #importing streamlit library
 import streamlit as st
 
-# Setting the title and a brief description of the app
+# Setting the title
 st.title("Title: Bio Data")
-st.write("This is a sample web app.")
 
 # Creating input field for first name
 first_name = st.text_input("First Name")
