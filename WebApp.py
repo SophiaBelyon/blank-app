@@ -17,7 +17,7 @@ with col2:
     st.write('') 
     #setting the title of the web app   
 with col3:
-    st.title("JANS") 
+    st.markdown("<h1 style='text-align: center; color: black;'>JANS</h1>", unsafe_allow_html=True)
     #setting column 4 of the web app
 with col4:
     st.write('')
@@ -26,12 +26,9 @@ with col5:
 with col6:
     st.write('')
 # Creates  another row with three columns to center the subtitle
-col7, col8, col9 = st.columns(3)
+col7, col9 = st.columns(3)
 with col7:
     st.write('')    
-with col8:
-    #Centered subtitle explaining the app's purpose
-    st.markdown("<h6 style='text-align: center;'>A simple web app to predict annual salary</h6>", unsafe_allow_html=True)
 with col9:
     st.write('')
 #Lists defining options for user input
