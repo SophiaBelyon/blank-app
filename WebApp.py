@@ -26,7 +26,7 @@ with col5:
 with col6:
     st.write('')
 # Creates  another row with three columns to center the subtitle
-col7, col9 = st.columns(3)
+col7, col9 = st.columns(2)
 with col7:
     st.write('')    
 with col9:
