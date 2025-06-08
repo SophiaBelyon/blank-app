@@ -1,18 +1,24 @@
+#importing necessary libraraies
 import pickle
 import numpy as np
 import streamlit as st
-
+#loading the pre-trained model
 model = pickle.load(open('model.pkl', 'rb'))
-
+#setting the columns of the web app
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
+#setting column 0 of the web app
 with col0:
     st.write('')
+    #setting column 1 of the web app
 with col1:
     st.write('')
+    #setting column 2 of the web app
 with col2:
-    st.write('')    
+    st.write('') 
+    #setting the title of the web app   
 with col3:
     st.title("ⴍage") 
+    #setting column 4 of the web app
 with col4:
     st.write('')
 with col5:
