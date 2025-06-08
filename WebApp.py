@@ -17,7 +17,7 @@ with col2:
     st.write('') 
     #setting the title of the web app using markdown  
 with col3:
-    st.markdown("<h3 style='text-align: center; color: white;'>💲JANS SALARY PREDICTOR💲</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: white;'>💲JANS💲</h3>", unsafe_allow_html=True)
     #setting column 4 of the web app
 with col4:
     st.write('')
