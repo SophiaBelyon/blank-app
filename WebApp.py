@@ -32,7 +32,7 @@ with col7:
 with col9:
     st.write('')
 #Lists defining options for user input
-gen_list = ["Female", "Male", "Other"]	
+gen_list = ["Female", "Male"]	
 edu_list = ["Bachelor's", "Master's", "PhD"]
 job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"]
 #Maps the job titles to numeric values(Corresponding indices for job titles)
